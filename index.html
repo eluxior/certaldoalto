@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>Certaldo Alto | Day Trip From Florence</title>
+  <title>Best Day Trip From Florence | Hidden Tuscany Escape</title>
 
-  <meta name="description" content="Discover Certaldo Alto and hidden Tuscany with a free local guide for the perfect day trip from Florence.">
+  <meta name="description" content="Escape Florence for a day and discover Certaldo Alto, one of Tuscany’s most authentic medieval villages with countryside views, local restaurants and hidden photography spots.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,10 +21,14 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
       color: white;
-      background: black;
+      background: #f5f1ea;
     }
 
     .hero {
@@ -103,6 +107,94 @@
       transform: translateY(-2px);
     }
 
+    .section {
+      padding: 100px 24px;
+      color: #2d2d2d;
+      background: #f5f1ea;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      margin-bottom: 30px;
+      text-align: center;
+      line-height: 1.1;
+    }
+
+    .section-text {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.15rem;
+      line-height: 1.9;
+      color: #555;
+    }
+
+    .cards {
+      margin-top: 70px;
+
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 24px;
+
+      box-shadow:
+        0 10px 30px rgba(0,0,0,0.05);
+
+      text-align: center;
+    }
+
+    .card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+      color: #2d2d2d;
+    }
+
+    .card p {
+      color: #666;
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+
+    .email-section {
+      background: #2d2d2d;
+      color: white;
+      text-align: center;
+    }
+
+    .email-section .section-text {
+      color: rgba(255,255,255,0.8);
+    }
+
+    .email-placeholder {
+      margin-top: 40px;
+      display: inline-block;
+      padding: 18px 34px;
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 999px;
+      color: rgba(255,255,255,0.8);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      padding: 40px 24px;
+      background: #1d1d1d;
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
     @media (max-width: 768px) {
 
       .hero {
@@ -116,6 +208,14 @@
       .subtitle {
         font-size: 1rem;
         line-height: 1.7;
+      }
+
+      .section {
+        padding: 80px 24px;
+      }
+
+      .card {
+        padding: 32px 24px;
       }
 
     }
@@ -143,13 +243,97 @@
         photography spots and unforgettable local experiences.
       </p>
 
-      <a href="#" class="cta-button">
+      <a href="#guide" class="cta-button">
         Get the Free Tuscany Guide
       </a>
 
     </div>
 
   </section>
+
+  <section class="section">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        A Hidden Medieval Village Near Florence
+      </h2>
+
+      <p class="section-text">
+        Just one hour from Florence, Certaldo Alto is one of Tuscany’s most authentic hill towns — untouched by mass tourism and filled with medieval streets, panoramic countryside views, local restaurants and timeless Italian atmosphere.
+      </p>
+
+    </div>
+
+  </section>
+
+  <section class="section">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Perfect For
+      </h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Photography Lovers</h3>
+
+          <p>
+            Discover cinematic Tuscany landscapes, golden light,
+            hidden alleys and authentic Italian atmosphere.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Couples & Romantic Escapes</h3>
+
+          <p>
+            Slow down, enjoy panoramic sunsets and experience
+            one of Tuscany’s most charming hidden villages.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Authentic Tuscany Travel</h3>
+
+          <p>
+            Escape crowded tourist routes and discover a more
+            local and genuine side of Tuscany near Florence.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="section email-section" id="guide">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Get the Free Tuscany Day Trip Guide
+      </h2>
+
+      <p class="section-text">
+        Receive local recommendations, hidden spots, restaurants,
+        countryside experiences and easy logistics for the perfect Tuscany escape from Florence.
+      </p>
+
+      <div class="email-placeholder">
+        Email form coming next
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 Certaldo Alto • Tuscany, Italy
+  </footer>
 
 </body>
 </html>
