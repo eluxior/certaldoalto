@@ -6,71 +6,149 @@
 
   <title>Certaldo Alto | Day Trip From Florence</title>
 
-  <meta name="description" content="Discover Certaldo Alto and the Tuscan countryside with a free local guide for the perfect day trip from Florence.">
+  <meta name="description" content="Discover Certaldo Alto and hidden Tuscany with a free local guide for the perfect day trip from Florence.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
-    body {
+
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f1ea;
-      color: #2d2d2d;
-      text-align: center;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: white;
+      background: black;
     }
 
     .hero {
-      min-height: 100vh;
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+
+      background-image:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('hero.jpeg');
+
+      background-size: cover;
+      background-position: center center;
+
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+
+      text-align: center;
       padding: 40px;
     }
 
-    h1 {
-      font-size: 3rem;
-      max-width: 800px;
-      line-height: 1.1;
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .eyebrow {
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 0.85rem;
       margin-bottom: 20px;
+      opacity: 0.9;
     }
 
-    p {
-      max-width: 650px;
-      font-size: 1.2rem;
-      line-height: 1.6;
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3rem, 8vw, 6rem);
+      line-height: 0.95;
       margin-bottom: 30px;
+      font-weight: 600;
     }
 
-    .button {
-      background: #2d2d2d;
+    .subtitle {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      max-width: 700px;
+      margin: 0 auto 40px auto;
+      opacity: 0.95;
+    }
+
+    .cta-button {
+      display: inline-block;
+
+      padding: 18px 38px;
+
+      background: rgba(255,255,255,0.15);
+
+      border: 1px solid rgba(255,255,255,0.35);
+
+      backdrop-filter: blur(8px);
+
       color: white;
-      padding: 16px 32px;
       text-decoration: none;
-      border-radius: 8px;
+
+      border-radius: 999px;
+
       font-size: 1rem;
-      transition: 0.3s;
+      font-weight: 500;
+
+      transition: all 0.3s ease;
     }
 
-    .button:hover {
-      opacity: 0.8;
+    .cta-button:hover {
+      background: rgba(255,255,255,0.25);
+      transform: translateY(-2px);
     }
+
+    @media (max-width: 768px) {
+
+      .hero {
+        padding: 24px;
+      }
+
+      h1 {
+        line-height: 1.05;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+
+    }
+
   </style>
 </head>
 
 <body>
 
   <section class="hero">
-    <h1>
-      Discover the Perfect Day Trip From Florence
-    </h1>
 
-    <p>
-      Explore Certaldo Alto, hidden Tuscany villages, countryside landscapes,
-      local restaurants, photography spots and authentic experiences.
-    </p>
+    <div class="hero-content">
 
-    <a class="button" href="#">
-      Get the Free Tuscany Guide
-    </a>
+      <div class="eyebrow">
+        Tuscany • Italy
+      </div>
+
+      <h1>
+        Escape Florence For a Day
+      </h1>
+
+      <p class="subtitle">
+        Discover Certaldo Alto, hidden Tuscany villages,
+        countryside landscapes, authentic restaurants,
+        photography spots and unforgettable local experiences.
+      </p>
+
+      <a href="#" class="cta-button">
+        Get the Free Tuscany Guide
+      </a>
+
+    </div>
+
   </section>
 
 </body>
